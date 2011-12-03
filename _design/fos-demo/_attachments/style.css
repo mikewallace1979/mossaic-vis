@@ -1,0 +1,176 @@
+body {
+  margin-top: 1.0em;
+  background-color: #f4f3ef;
+  font-family: Helvetica Neue, Helvetica, Arial, FreeSans, san-serif;
+  color: #484338;
+	margin:1em, 5em;
+	padding:1em, 5em;
+}
+a { color: #918c7a; }
+pre { background: #242424; color: #fff; padding: 15px;}
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+line { stroke: #484338; }
+#plot1 .chart rect {
+	fill: steelblue;
+}
+#plot2 .chart rect {
+	fill: orange;
+}
+
+.chart rect {
+	font: 10px sans-serif;
+	text-align: right;
+	padding: 3px;
+	margin: 1px;
+}
+
+text {
+	font-family: Helvetica Neue, Helvetica, Arial;
+	font-size: 9pt;
+}
+
+label {
+  font-family: Helvetica Neue, Helvetica, Arial;
+	font-size: 9pt;
+}
+
+.x_label {
+  color: #918c7a;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 8pt;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+.y_label {
+  color: #918c7a;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 8pt;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+p {
+	margin:1em, 5em;
+	padding:1em, 5em;
+	font-family: Helvetica Neue, Helvetica, Arial;
+	font-weight: 200;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #918c7a;
+	font-family: Helvetica Neue, Helvetica, Arial;
+	font-weight: 200;
+}
+h1 {
+	font-size: 3em;
+	font-weight: 100;
+}
+h1 a { text-decoration: none }
+h1 .small { font-size: 0.4em; }
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.6em;
+}
+h5 {
+	font-size: 1.4em;
+}
+h6 {
+	font-size: 1.2em;
+}
+#container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.water_table {
+  stroke: lightskyblue;
+  stroke-width: 3;
+}
+
+.slope_sections {
+    stroke: steelblue;
+    stroke-width: 6;
+    stroke-linecap: round;
+    fill: none;
+}
+
+.tabs {
+  width: 100%;
+}
+.tabs_table {
+  width: 100%;
+}
+.tab {
+  border: 1px solid;
+  padding: 5px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  width: 20;
+}
+
+input {
+  width: 60;
+  font-family: Helvetica Neue, Helvetica, Arial, FreeSans, san-serif;
+  text-align: right;
+}
+
+#mossaic_slope_form {
+  width: 100%;
+  height: 35%;
+  overflow: auto;
+}
+
+#mossaic_slope_form_container {
+  float: right;
+  width: 65%;
+}
+
+#mossaic_slope_display {
+  float: right;
+  width: 65%;
+}
+
+button {
+  font-size: 80%;
+  -webkit-appearance: square-button;
+  font-family: Helvetica Neue, Helvetica, Arial, FreeSans, san-serif;
+  color: #484338;
+}
+
+button.delete {
+  width: 15px;
+  background: transparent url(image/delete-mini.png) no-repeat left;
+  border: none;
+  padding: 0;
+  height: 20px;
+}
+
+button.delete:hover {
+  background: transparent url(image/delete-mini.png) no-repeat right;
+}
+
+button.add {
+  background: transparent url(image/add.png) no-repeat top left;
+  border: none;
+  padding: 0 0 0 20;
+  height: 20px;
+  background-position: 0px 1px;
+}
+
+button.add:hover {
+  background-position: 0px -31px;
+  color: #000;
+}
+
+td {
+  text-align: center;
+}

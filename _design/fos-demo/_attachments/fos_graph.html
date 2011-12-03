@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Slope input test</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="vendor/d3/lib/jquery/jquery.min.js"></script>
+		<script src="vendor/d3/d3.min.js" type="text/javascript"> </script>
+    <script src="vendor/d3/d3.layout.min.js" type="text/javascript"> </script>
+    <script src="/_utils/script/jquery.couch.js", type="text/javascript"> </script>
+    <script src="vendor/underscore/underscore-min.js" type="text/javascript"> </script>
+    <script src="vendor/backbone/backbone.js" type="text/javascript"> </script>
+    <script src="vendor/backbone.couch/js/backbone.couch.js" type="text/javascript"> </script>
+    <script src="vendor/backbone-d3/backbone-d3.js" type="text/javascript"></script>
+    <script src="lib/fos.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        Backbone.couch.databaseName = "dc_hack";
+        Backbone.couch.ddocName = "fos-demo";
+        var FosCollection = Backbone.Collection.extend({
+          initialize: function(collection, options) {
+            _.bindAll(this);
+            this.url ="fos";
+            this.doreduce = false;
+            this.group = null;
+          },
+          success: function(result) {
+            this.reset(result.rows);
+          }
+        });
+
+        var fos = new FosCollection();
+
+        var fos_view = new Mossaic.Views.Fos(fos, {
+          divname: "#fos_graph",
+          width: 300,
+          height: 200
+        });
+        fos.fetch({silent: true});
+      });
+    </script>
+  </head>
+  <body>
+    <div id="fos_graph">
+    </div>
+  </body>
+</html>
